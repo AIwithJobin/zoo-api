@@ -6,8 +6,8 @@ plugins {
 	kotlin("plugin.jpa") version "2.2.21"
 }
 
-group = "com.example"
-version = "0.0.1-SNAPSHOT"
+group = "dev.jobinjose"
+version = "1.0.0"
 
 java {
 	toolchain {
@@ -28,7 +28,8 @@ dependencies {
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("org.postgresql:postgresql")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testImplementation("io.mockk:mockk:1.10.4")
+	testImplementation("io.mockk:mockk:1.13.12")
+	testRuntimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-data-jpa-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-validation-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")

@@ -1,4 +1,4 @@
-package com.example.zoo
+package dev.jobinjose.zoo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class ZooApplication
 
 fun main(args: Array<String>) {
-	runApplication<ZooApplication>(*args)
+    runApplication<ZooApplication>(*args)
 }
